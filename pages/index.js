@@ -4,6 +4,7 @@ import JobCard from '../components/jobCard/JobCard';
 import jobDataDev from '../data/jobsApril.json' ;
 import jobDataUx from '../data/uxuiJobsApril.json';
 import SearchBar from '../components/searchBar/SearchBar';
+import {Head} from 'next/document'
 
 export default class Index extends Component {
   state = {
@@ -53,7 +54,9 @@ handleChange = (e) => {
 }
   render() {
     return (
+      
       <div className="main">
+        {/* <Head> <title>Hello Work</title></Head> */}
       {/* <Link to="/jobPost"><button>create job</button></Link> */}
         <div className="header">
           <h1>Say hi to your new job <span role="image">👋</span></h1>
