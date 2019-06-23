@@ -56,7 +56,7 @@ handleChange = (e) => {
     return (
       
       <div className="main">
-        {/* <Head> <title>Hello Work</title></Head> */}
+        <button className="post-link"> <a href="/new" > post a job</a></button>
       {/* <Link to="/jobPost"><button>create job</button></Link> */}
         <div className="header">
           <h1>Say hi to your new job <span role="image">👋</span></h1>
@@ -85,13 +85,19 @@ handleChange = (e) => {
                 return <JobCard key={job.Company + `${i}`}position={job.Position} company={job.Company} status={job.Status} date={job.Date} link={job.LinkUrl}/>
                 })
               }
+            
           </div>
           
           }
+          
           <style jsx>
             {`
+            *{
+              font-family: 'Montserrat', sans-serif;
+            }
             .header{
               text-align:center;
+              margin-top: 70px;
             }
             button{
               cursor:pointer;
@@ -111,6 +117,19 @@ handleChange = (e) => {
               font-size: 20px;
               color: white;
               padding: 10px 0;
+            }
+            .post-link{
+              position:fixed;
+              top:0;
+              right:0;
+              width:20%;
+              border-radius:5px;
+            }
+            .post-link a{
+              text-decoration: none;
+              color: white;
+              font-size: 20px;
+
             }
               
             `}

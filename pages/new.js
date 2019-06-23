@@ -6,7 +6,13 @@ export default class jobPost extends Component {
     return (
       <div>
         <Form />
-        
+        <style jsx>
+          {`
+            *{
+              font-family: 'Montserrat', sans-serif;
+            }
+          `}
+        </style>
       </div>
     )
   }

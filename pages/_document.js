@@ -14,11 +14,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charSet="utf-8" />
-        <link rel="shortcut icon" type='image/x-icon' href="../static/waving-hand.ico"/>
-        
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta charSet="utf-8" />
+          <link rel="shortcut icon" type='image/x-icon' href="../static/waving-hand.ico"/>
+          <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"></link>
         </Head>
         <body className="custom_class">
           <Main />
